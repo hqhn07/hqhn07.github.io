@@ -569,6 +569,7 @@ body.cover-page {
 .filmstrip-track img {
   flex: 0 0 auto;
   height: 65vh;
+  max-height: 650px;
   width: auto;
   max-width: 90%;
   object-fit: cover;
@@ -583,6 +584,7 @@ body.cover-page {
   position: relative;
   width: 100%;
   height: 65vh;
+  max-height: 650px;
   background: #f0efec;
   overflow: hidden;
 }
