@@ -451,14 +451,13 @@ body.cover-page {
   margin: 0 0 0.75rem;
 }
 .gallery-title-label {
-  text-align: center;
-  font-family: var(--heading1-font);
-  font-weight: 700;
-  color: var(--nav-color);
-  font-size: 22px;
-  letter-spacing: 0;
-  line-height: 1.2em;
-  text-transform: none;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
   margin: 0 0 1.25rem;
 }
 .gallery-spacer {
