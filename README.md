@@ -49,4 +49,6 @@ Then visit `http://localhost:4000`.
 
 ## Deploying
 
-This repo is a GitHub Pages **user site** (`<username>.github.io`), which GitHub builds automatically with Jekyll on every push to `main` — no GitHub Actions workflow needed. In your repo's Settings → Pages, just make sure the source is set to deploy from the `main` branch, root folder.
+This repo (`hqhn07/qht.github.io`) is a GitHub Pages **project site** serving a **custom domain**, `qhtran.com`. GitHub builds it automatically with Jekyll on every push to `main` — no GitHub Actions workflow needed. In the repo's Settings → Pages: source is "Deploy from a branch" (`main`, `/root`), and the custom domain field is set to `qhtran.com` (this commits a `CNAME` file to the repo root, already present here). `_config.yml` has `baseurl: ""` and `url: "https://qhtran.com"` to match — since the site is reached via the custom domain, not the default `hqhn07.github.io/qht.github.io/` path, all paths are root-relative.
+
+DNS for `qhtran.com` is configured at the registrar with the four GitHub Pages A records (`185.199.108.153`, `.109.153`, `.110.153`, `.111.153`) for the apex domain, and a `CNAME` record for `www` pointing to `hqhn07.github.io`.
